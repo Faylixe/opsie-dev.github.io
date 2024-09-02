@@ -1,0 +1,12 @@
+title: "opsie"
+email: "contact@opsie.dev"
+description: ""
+url: "https://blog.opsie.dev"
+github_username: "opsie-dev"
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+collections:
+  links:
+    output: false
