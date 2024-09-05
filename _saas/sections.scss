@@ -1,0 +1,27 @@
+/**
+ * TBD
+ */
+
+header {
+    background: $color4;
+}
+
+footer {
+    background: $color1;
+}
+
+section#blog {
+    background: $color3;
+    color: $color1;
+}
+
+section#commercial {
+    background: $color1;
+    background: linear-gradient(0, $color1 0%, $color2 100%);
+    color: $color4;
+}
+
+section#showcase {
+    background: $color4;
+    color: $color1;
+}

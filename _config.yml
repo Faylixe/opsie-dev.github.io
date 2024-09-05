@@ -1,12 +1,26 @@
-title: "opsie"
+title: "opsie.dev"
 email: "contact@opsie.dev"
-description: ""
+description: "TBD"
 url: "https://blog.opsie.dev"
 github_username: "opsie-dev"
 markdown: kramdown
+
 sass:
   sass_dir: _sass
   style: compressed
+  
 collections:
-  links:
+  posts:
     output: false
+
+meta:
+  defaults:
+    description: "TBD"
+    image: "TBD"
+    title: "TBD"
+    type: "article"
+
+socials:
+  facebook: ""
+  linkedin: ""
+  x: "@opsie.dev"
