@@ -23,7 +23,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - run: ls -la
-      - run: bundle exec jekyll build --source docs
+      - run: cat Gemfile.lock
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
