@@ -1,14 +1,9 @@
-title: "opsie.dev"
 email: "contact@opsie.dev"
 description: "TBD"
+theme: opsie
+title: "opsie.dev | OPS is easy"
 url: "https://blog.opsie.dev"
-github_username: "opsie-dev"
-markdown: kramdown
 
-sass:
-  sass_dir: _sass
-  style: compressed
-  
 collections:
   posts:
     output: false
@@ -19,8 +14,3 @@ meta:
     image: ""
     title: "opsie.dev | OPS is easy"
     type: "article"
-  
-links:
-  github: https://github.com/Faylixe
-  linkedin: https://www.linkedin.com/in/felixvoituret
-  malt: https://www.malt.fr/profile/felixvoituret

@@ -2,11 +2,13 @@
 <html>
     <head>
         {% include meta.html
-            description=""
-            image=""
-            title=""
-            type=""
+            description="Test"
+            image="Test"
+            title="Test"
+            type="test"
         %}
+        <title>{{ site.title }}</title>
+        <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
     </head>
     <body>
         {% include header.html %}

@@ -1,0 +1,8 @@
+.git
+.gitignore
+_site
+CNAME
+Dockerfile
+Dockerfile.dev
+Makefile
+README.md
