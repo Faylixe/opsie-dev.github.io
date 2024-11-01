@@ -2,26 +2,22 @@
  * TBD
  */
 
+html, body {
+    background-color: $color2;
+    width: 100%;
+}
+
 header {
-    background: $color4;
+    background-color: $color1;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 footer {
-    background: $color1;
-}
-
-section#blog {
-    background: $color3;
-    color: $color1;
-}
-
-section#commercial {
-    background: $color1;
-    background: linear-gradient(0, $color1 0%, $color2 100%);
-    color: $color4;
-}
-
-section#showcase {
-    background: $color4;
-    color: $color1;
+    background-color: $color1;
+    width: 100%;
 }

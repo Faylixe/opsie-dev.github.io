@@ -15,12 +15,12 @@ collections:
 
 meta:
   defaults:
-    description: "TBD"
-    image: "TBD"
-    title: "TBD"
+    description: ""
+    image: ""
+    title: "opsie.dev | OPS is easy"
     type: "article"
-
-socials:
-  facebook: ""
-  linkedin: ""
-  x: "@opsie.dev"
+  
+links:
+  github: https://github.com/Faylixe
+  linkedin: https://www.linkedin.com/in/felixvoituret
+  malt: https://www.malt.fr/profile/felixvoituret
