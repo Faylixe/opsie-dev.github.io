@@ -1,0 +1,19 @@
+---
+layout: base
+---
+<section id="paginated-posts">
+    {% for post in paginator.posts %}
+        {% include posts/card.html post=post excerpt=post.excerpt %}
+    {% endfor %}
+</section>
+<section id="paginator">
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+        <a class="button active">{{ page }}</a>
+    {% elsif page == 1 %}
+        <a class="button" href="{{ site.paginate_path | relative_url | replace: ':num', '' }}">{{ page }}</a>
+    {% else %}
+        <a class="button" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+    {% endfor %}
+</section>

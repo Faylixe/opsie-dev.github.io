@@ -14,6 +14,7 @@ I'm speaking at Google Cloud Next ‘22 with Kris Braun, covering our Workflows 
 <!--more-->
 <p align="center">
     <iframe
+        class="yt"
         width="560"
         height="315"
         src="https://www.youtube.com/embed/Sm_L2zv0sW0?si=xgiXtAP_iUlWzzYC"

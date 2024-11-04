@@ -4,3 +4,19 @@
 @import "containers/home";
 @import "containers/footer";
 @import "containers/post";
+@import "containers/posts";
+
+div#page-content {
+  background: $bgColor2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  width: 100%;
+  @media only screen and (max-width: 768px) {
+    padding: 40px;
+  }
+  @media only screen and (min-width: 1200px) {
+    padding: 80px 15%;
+  }
+}

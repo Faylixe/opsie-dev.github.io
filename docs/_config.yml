@@ -8,6 +8,8 @@ collections:
   posts:
     output: false
 
+paginate      : 2
+paginate_path : /posts/:num
 meta:
   defaults:
     description: ""

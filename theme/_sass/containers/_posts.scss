@@ -1,0 +1,27 @@
+section#paginated-posts {
+    & > .post-card {
+        margin-bottom: 40px;
+    }
+}
+
+section#paginator {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    & > a.button {
+        align-items: center;
+        border-radius: 50%;
+        display: block;
+        height: 25px;
+        justify-content: center;
+        padding: 5px;
+        margin-right: 10px;
+        width: 25px;
+
+        &.active {
+            background: $bgColor5;
+            color: $fgColor2;
+        }
+    }
+}
