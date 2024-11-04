@@ -4,6 +4,7 @@ layout: base
 <section id="posts">
     {% assign first_post=site.posts | first %}
     {% include posts/card.html excerpt=first_post.excerpt post=first_post %}
+    <div class="spacer"></div>
     <div class="post-list">
     {% for post in site.posts limit:2 offset:1 %}
         {% include posts/card.html post=post %}

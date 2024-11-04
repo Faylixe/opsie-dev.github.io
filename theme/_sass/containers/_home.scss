@@ -14,6 +14,15 @@ section#posts {
     max-width: 50%;
   }
 
+  & > .spacer {
+    display: none;
+    @media only screen and (max-width: 992px) {
+      border: 1px solid $fgColor2;
+      display: block;
+      width: 80%;
+    }
+  }
+
   @media only screen and (max-width: 992px) {
     flex-direction: column;
     & > .post-card {
