@@ -3,7 +3,7 @@ layout: base
 ---
 <section id="paginated-posts">
     {% for post in paginator.posts %}
-        {% include posts/card.html post=post excerpt=post.excerpt %}
+        {% include posts/card.html post=post excerpt=post.excerpt tags=1 %}
     {% endfor %}
 </section>
 <section id="paginator">

@@ -24,10 +24,12 @@
     </div>
     {% endif %}
     <div class="post-card-footer">
+        {% if include.tags %}
         {% for tag in include.post.tags %}
-        <a href="">
-            {{ tag }}{% if not forloop.last %}, {% endif %}
+        <a class="button" href="">
+            {{ tag }}
         </a>
         {% endfor %}
+        {% endif %}
     </div>
 </div>
