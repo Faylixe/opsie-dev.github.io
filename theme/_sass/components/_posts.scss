@@ -34,7 +34,7 @@
   }
 }
 .post-card-excerpt {
-  font-size: 10pt;
+  font-size: 9pt;
 }
 
 .post-card-footer, .post-footer {
@@ -44,7 +44,9 @@
   & > a:focus,
   & > a:hover,
   & > a:visited {
+    background: $bgColor5;
     border-radius: 10px;
+    color: $fgColor2;
     font-size: 7pt;
     font-weight: 800;
     padding: 5px 10px;

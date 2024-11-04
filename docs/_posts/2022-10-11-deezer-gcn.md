@@ -5,7 +5,7 @@ icon   : "assets/images/icons/gcp.png"
 layout : "post"
 tags   :
 - "Deezer"
-- "Google Cloud Platform"
+- "GCP"
 - "Delivery"
 title  : "Google Cloud Next' 2022: How Deezer built a serverless media pipeline for self-produced content"
 ---
