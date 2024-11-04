@@ -1,5 +1,5 @@
 ---
-author : "F&eacute;lix Voituret"---
+author : "F&eacute;lix Voituret"
 excerpt_separator: <!--more-->
 icon   : "assets/images/icons/gcp.png"
 layout : "post"
