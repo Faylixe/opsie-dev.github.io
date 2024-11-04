@@ -1,9 +1,12 @@
 github:
   href  : "https://github.com/Faylixe"
+  label : "GitHub"
   title : "Visit my GitHub profile"
 linkedin:
   href  : "https://www.linkedin.com/in/felixvoituret"
+  label : "LinkedIn" 
   title : "Visit my Linked'in profile"
 malt:
   href  : "https://www.malt.fr/profile/felixvoituret"
+  label : "Malt"
   title : "Visit my Malt profile"

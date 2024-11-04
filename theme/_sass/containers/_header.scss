@@ -16,6 +16,12 @@ header {
   }
 }
 
+header > a > img.brand {
+  @media only screen and (max-width: 768px) {
+    padding-top: 10px;
+  }
+}
+
 header > nav > ul {
   display: flex;
   flex-flow: row;
@@ -24,4 +30,10 @@ header > nav > ul {
 
 header > nav > ul > li {
   padding-left: 15px;
+
+  &:first-of-type {
+    @media only screen and (max-width: 768px) {
+      margin-top: -2px;
+    }
+  }
 }

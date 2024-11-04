@@ -1,9 +1,12 @@
 <footer>
     <nav>
         <ul class="vb">
-            <li>{% include links/linkedin.html label="Linked'In" %}</li>
-            <li>{% include links/malt.html label="Malt" %}</li>
-            <li>{% include links/github.html label="GitHub" %}</li>
+            {% assign label_linkedin = site.data.links.linkedin.label %}
+            {% assign label_malt = site.data.links.malt.label %}
+            {% assign label_github = site.data.links.github.label %}
+            <li>{% include links/linkedin.html label=label_linkedin %}</li>
+            <li>{% include links/malt.html label=label_malt %}</li>
+            <li>{% include links/github.html label=label_github %}</li>
             <li>
                 <a
                     class="f"
