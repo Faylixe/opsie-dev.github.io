@@ -1,0 +1,57 @@
+#content {
+  background: $bgColor2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+section#posts {
+  background: $bgColor2;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+
+  & > div {
+    flex-grow: 1;
+    margin: 20px;
+  }
+
+  & > .post-card {
+    max-width: 50%;
+  }
+
+  @media only screen and (max-width: 992px) {
+    flex-direction: column;
+    & > .post-card {
+      max-width: 100%;
+    }
+  }
+
+  & > .post-list {
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+
+    & > .post-card {
+      margin-bottom: 20px;
+    }
+
+    & > .post-button {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}
+
+section#showcase {
+  background: $bgColor1;
+  width: 100%;
+}
+
+section#offers {
+  background: $bgColor2;
+  width: 100%;
+}

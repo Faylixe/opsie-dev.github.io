@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        {% include meta.html
-            description="Test"
-            image="Test"
-            title="Test"
-            type="test"
-        %}
+        {% include meta.html %}
         <title>{{ site.title }}</title>
         <link rel="icon" type="image/png" href="{{ '/assets/images/favicon_dark_32x32.png' | prepend: site.baseurl }}" />
         <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
     </head>
     <body>
         {% include sections/header.html %}
-        <div id="content-container">
-            {{ content }}
+        <div id="content">
+            <section id="posts">
+                {% assign first_post=site.posts | first %}
+                {% include posts/card.html excerpt=first_post.excerpt post=first_post %}
+                <div class="post-list">
+                {% for post in site.posts limit:2 offset:1 %}
+                    {% include posts/card.html post=post %}
+                {% endfor %}
+                    <div class="post-button">
+                        <a class="button">
+                            View more stories
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="showcase">
+
+            </section>
+            <section id="offers">
+
+            </section>
         </div>
         {% include sections/footer.html %}
     </body>

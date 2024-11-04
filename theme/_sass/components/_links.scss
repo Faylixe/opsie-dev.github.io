@@ -22,3 +22,19 @@ a.f:visited {
 a.f > span {
   margin-left: 10px;
 }
+
+a.button,
+a.button:active,
+a.button:focus,
+a.button:visited {
+  background: $bgColor3;
+  border-radius: 40px;
+  color: $fgColor1;
+  filter: drop-shadow(black 0px 1px 1px);
+  padding: 20px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  &:hover {
+    background: $bgColor4;
+  }
+}

@@ -3,6 +3,7 @@ header {
   background-color: $bgColor1;
   box-sizing: border-box;
   display: flex;
+  filter: drop-shadow(black 0px 2px 2px);
   flex-flow: row;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -17,9 +18,7 @@ header {
 }
 
 header > a > img.brand {
-  @media only screen and (max-width: 768px) {
-    padding-top: 10px;
-  }
+  padding-top: 10px;
 }
 
 header > nav > ul {

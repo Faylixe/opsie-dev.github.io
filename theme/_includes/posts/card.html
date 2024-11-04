@@ -1,0 +1,35 @@
+<div class="post-card">
+    <div class="post-card-header">
+        <!--
+        <img 
+            class="post-card-icon"
+            src="{{ include.post.icon | prepend: site.baseurl }}">
+        -->
+        <div class="post-card-metadata">
+            <a href="{{ include.post.url }}">
+                <h1>{{ include.post.title }}</h1>
+            </a>
+            <span class="post-card-date">
+                {{ include.post.date | date: "%m/%d/%Y" }}
+            </span>
+            <span>by</span>
+            <span class="post-card-author">
+                {{ include.post.author }}
+            </span>    
+        </div>
+    </div>
+    {% if include.excerpt %}
+    <div class="post-card-excerpt">
+        {{ include.excerpt }}
+    </div>
+    {% endif %}
+    <div class="post-card-footer">
+        {% for tag in include.post.tags %}
+        <a
+            href=""
+            class="button">
+            {{ tag }}
+        </a>
+        {% endfor %}
+    </div>
+</div>

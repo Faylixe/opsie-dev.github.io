@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include meta.html %}
+        <title>{{ site.title }}</title>
+        <link rel="icon" type="image/png" href="{{ '/assets/images/favicon_dark_32x32.png' | prepend: site.baseurl }}" />
+        <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
+    </head>
+    <body>
+        {% include sections/header.html %}
+        {% include posts/content.html %}
+        {% include sections/footer.html %}
+    </body>
+</html>
