@@ -17,13 +17,14 @@ section#posts {
   & > .spacer {
     display: none;
     @media only screen and (max-width: 992px) {
-      border: 1px solid $fgColor2;
+      border: 1px solid $fgColor1;
       display: block;
       width: 80%;
     }
   }
 
   @media only screen and (max-width: 992px) {
+    align-items: center;
     flex-direction: column;
     & > .post-card {
       max-width: 100%;
