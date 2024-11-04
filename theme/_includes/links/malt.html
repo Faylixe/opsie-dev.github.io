@@ -1,0 +1,14 @@
+<a
+    class="f"
+    href="{{ site.data.links.malt.href }}"
+    target="_blank">
+    {% if include.label %}
+    <span>{{ include.label }}</span>
+    {% else %}
+    <img
+        alt="{{ site.data.links.malt.title }}"
+        class="icon"
+        src="{{ '/assets/images/icon_malt_54x54.png' | prepend: site.baseurl }}"
+        title="{{ site.data.links.malt.title }}">
+    {% endif %}
+</a>

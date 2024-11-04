@@ -12,8 +12,10 @@
         <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
     </head>
     <body>
-        {% include header.html %}
-        {{ content }}
-        {% include footer.html %}
+        {% include sections/header.html %}
+        <div id="content-container">
+            {{ content }}
+        </div>
+        {% include sections/footer.html %}
     </body>
 </html>

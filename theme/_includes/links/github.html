@@ -1,0 +1,14 @@
+<a
+    class="f"
+    href="{{ site.data.links.github.href }}"
+    target="_blank">
+    {% if include.label %}
+    <span>{{ include.label }}</span>
+    {% else %}
+    <img
+        alt="{{ site.data.links.github.title }}"
+        class="icon"
+        src="{{ '/assets/images/icon_github_48x48.png' | prepend: site.baseurl }}"
+        title="{{ site.data.links.github.title }}">
+    {% endif %}
+</a>

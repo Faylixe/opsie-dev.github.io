@@ -1,5 +1,14 @@
 @charset "utf-8";
 
-@import "colors";
-@import "fonts";
-@import "sections";
+@import "common/colors";
+@import "common/fonts";
+@import "components/all";
+@import "containers/all";
+
+html, body {
+    background-color: $bgColor2;
+    color: $fgColor1;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}

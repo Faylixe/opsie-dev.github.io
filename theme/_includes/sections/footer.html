@@ -1,0 +1,24 @@
+<footer>
+    <nav>
+        <ul class="vb">
+            <li>{% include links/linkedin.html label="Linked'In" %}</li>
+            <li>{% include links/malt.html label="Malt" %}</li>
+            <li>{% include links/github.html label="GitHub" %}</li>
+            <li>
+                <a
+                    class="f"
+                    href="mailto:{{ site.email }}">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="spacer"></div>
+    <div class="company">
+        {% include links/brand.html %}
+        <br>
+        <span>{{ site.data.legal.status }}</span>
+        <span>{{ site.data.legal.copyright }}</span>
+        <span>{{ site.data.legal.mention }}</span>
+    </div>
+</footer>

@@ -1,0 +1,14 @@
+<a
+    class="f"
+    href="{{ site.data.links.linkedin.href }}"
+    target="_blank">
+    {% if include.label %}
+    <span>{{ include.label }}</span>
+    {% else %}
+    <img
+        alt="{{ site.data.links.linkedin.title }}"
+        class="icon"
+        src="{{ '/assets/images/icon_linkedin_52x52.png' | prepend: site.baseurl }}"
+        title="{{ site.data.links.linkedin.title }}">
+    {% endif %}
+</a>
