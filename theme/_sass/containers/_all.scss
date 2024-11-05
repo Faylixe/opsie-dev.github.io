@@ -6,11 +6,9 @@
 @import "containers/post";
 @import "containers/posts";
 
-div#page-content {
+.padded-content {
   background: $bgColor2;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   padding: 80px;
   width: 100%;
   @media only screen and (max-width: 768px) {

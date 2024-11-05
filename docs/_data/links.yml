@@ -10,3 +10,10 @@ malt:
   href  : "https://www.malt.fr/profile/felixvoituret"
   label : "Malt"
   title : "Visit my Malt profile"
+read_more:
+  href  : "/posts/"
+  label : "Read more stories"
+  title : "Read more stories"
+hire_me:
+  label : "Work with me"
+  title : "Work with me"
