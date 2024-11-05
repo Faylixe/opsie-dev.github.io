@@ -10,7 +10,16 @@ tags   :
 title  : "Google Cloud Next' 2022: How Deezer built a serverless media pipeline for self-produced content"
 ---
 
-I'm speaking at Google Cloud Next ‘22 with Kris Braun, covering our Workflows usage at Deezer for building a serverless content delivery pipeline.
+Thanks to the collaboration with *Google Cloud teams* I presented
+at <ins>Google Cloud Next ‘22</ins> along side with
+<a href="https://www.linkedin.com/in/krisbraun" target="_blank">Kris Braun</a>, covering our <a href="https://cloud.google.com/workflows" target="_blank">Workflows</a>
+usage at *Deezer* for building a serverless content delivery
+pipeline. Using <a href="https://cloud.google.com/workflows" target="_blank">Workflows</a>
+allowed us to implement video and audio media delivery with
+a high velocity, by automating every steps such as media encoding
+or metadata validation. The talk highlight every features provided
+by <a href="https://cloud.google.com/workflows" target="_blank">Workflows</a> solution as well as how we integrated it into our already existing serverless
+ecosytem.
 <!--more-->
 <p align="center">
     <iframe
