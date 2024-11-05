@@ -17,3 +17,7 @@ read_more:
 hire_me:
   label : "Work with me"
   title : "Work with me"
+view_sources:
+  href  : "https://github.com/opsie-dev/opsie-dev.github.io"
+  label : "Github Pages"
+  title : "View sources"
