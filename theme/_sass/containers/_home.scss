@@ -2,7 +2,6 @@ section#posts {
   background: $bgColor2;
   box-sizing: border-box;
   display: flex;
-  filter: drop-shadow(black 0px 1px 1px);
   justify-content: space-between;
   width: 100%;
 
@@ -47,60 +46,4 @@ section#posts {
       width: 100%;
     }
   }
-}
-
-section#about {
-  background: $bgColor5;
-  box-sizing: border-box;
-  color: $fgColor2;
-  display: flex;
-  filter: drop-shadow(black 0px 1px 1px);
-  justify-content: space-around;
-  padding: 80px 0;
-  width: 100%;
-
-  & > div {
-    margin: 20px;
-  }
-
-  & > div.left {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-    & > img.me {
-      border-radius: 50%;
-      filter: drop-shadow(black 0px 1px 1px);
-      height: 200px;
-      margin-bottom: 40px;
-      margin-left: 8px;
-      width: 200px;
-    }
-
-    & > .button {
-      max-width: 150px;
-    }
-  }
-
-  & > div.right {
-    flex-grow: 1;
-    font-size: 11pt;
-    max-width: 50%;
-    text-wrap: balance;
-  }
-
-  @media only screen and (max-width: 992px) {
-    align-items: center;
-    flex-direction: column-reverse;
-    & > div {
-      max-width: 100%;
-    }
-  }
-
-  @media only screen and (min-width: 1200px) {
-    & {
-      padding: 120px 20%;
-    }
-  }
-
 }

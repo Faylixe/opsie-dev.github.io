@@ -9,6 +9,30 @@
     <body>
         {% include sections/header.html %}
         {{ content }}
+        <section id="about">
+            <div class="left">
+                <img
+                    alt=""
+                    class="me"
+                    src="{{ '/assets/images/me_1377x1377.jpg' | prepend: site.baseurl }}"
+                    title="">
+                <a
+                    class="button light"
+                    href="{{ site.data.links.malt.href }}"
+                    title="{{ site.data.links.hire_me.title }}"
+                    target="_blank">
+                    {{ site.data.links.hire_me.label }}
+                </a>
+            </div>
+            <div class="right">
+                <h1>{{ site.data.copy.showcase.title }}</h1>
+                {% for paragraph in site.data.copy.showcase.description %}
+                <p>
+                    {{ paragraph }}
+                </p>
+                {% endfor %}
+            </div>
+        </section>
         {% include sections/footer.html %}
     </body>
 </html>

@@ -1,45 +1,23 @@
 ---
 layout: base
 ---
-<section class="padded-content" id="posts">
-    {% assign first_post=site.posts | first %}
-    {% include posts/card.html excerpt=first_post.excerpt post=first_post %}
-    <div class="spacer"></div>
-    <div class="post-list">
-    {% for post in site.posts limit:2 offset:1 %}
-        {% include posts/card.html post=post %}
-    {% endfor %}
-        <div class="post-button">
-            <a
-                class="button"
-                href="{{ site.data.links.read_more.href }}"
-                title="{{ site.data.links.read_more.title }}">
-                {{ site.data.links.read_more.label }}
-            </a>
-        </div>
-    </div>
-</section>
-<section id="about">
-    <div class="left">
-        <img
-            alt=""
-            class="me"
-            src="{{ '/assets/images/me_1377x1377.jpg' | prepend: site.baseurl }}"
-            title="">
-        <a
-            class="button light"
-            href="{{ site.data.links.malt.href }}"
-            title="{{ site.data.links.hire_me.title }}"
-            target="_blank">
-            {{ site.data.links.hire_me.label }}
-        </a>
-    </div>
-    <div class="right">
-        <h1>{{ site.data.copy.showcase.title }}</h1>
-        {% for paragraph in site.data.copy.showcase.description %}
-        <p>
-            {{ paragraph }}
-        </p>
+<div class="padded-content">
+    <section id="posts">
+        {% assign first_post=site.posts | first %}
+        {% include posts/card.html excerpt=first_post.excerpt post=first_post %}
+        <div class="spacer"></div>
+        <div class="post-list">
+        {% for post in site.posts limit:2 offset:1 %}
+            {% include posts/card.html post=post %}
         {% endfor %}
-    </div>
-</section>
+            <div class="post-button">
+                <a
+                    class="button"
+                    href="{{ site.data.links.read_more.href }}"
+                    title="{{ site.data.links.read_more.title }}">
+                    {{ site.data.links.read_more.label }}
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
